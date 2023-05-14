@@ -14,7 +14,9 @@
   --colors-sand8: hsl(50, 3.8%, 30.6%);
   --colors-sand9: hsl(50, 4%, 42.7%);
   --colors-sand10: hsl(52, 3.1%, 48.3%);
-  --colors-sand11: hsl(50, 4%, 61.8%);
+  --colors-sand11: hsl(45, 3%, 73%);
+
+  --colors-sand112: hsl(40, 3%, 77%);
   --colors-sand12: hsl(56, 4%, 92.8%);
   --colors-sandA1: hsla(0, 0%, 0%, 0);
   --colors-sandA2: hsla(60, 89.8%, 91.4%, 0.026);
@@ -23,7 +25,7 @@
   --colors-sandA5: hsla(60, 81.9%, 95.2%, 0.104);
   --colors-sandA6: hsla(41, 87.6%, 94.8%, 0.134);
   --colors-sandA7: hsla(60, 95.4%, 96.2%, 0.172);
-  --colors-sandA8: hsla(49, 93.5%, 95.7%, 0.254);
+  --colors-sandA8: hsla(52, 16%, 55%, 0.254);
   --colors-sandA9: hsla(52, 97.3%, 96.2%, 0.391);
   --colors-sandA10: hsla(52, 97.8%, 96.7%, 0.451);
   --colors-sandA11: hsla(51, 97%, 97.8%, 0.597);
@@ -60,10 +62,15 @@
   --font-size-small: 14px;
   --font-size-medium: 22px;
   --font-size-big: 32px;
+
+  --light: #d8dbe0;
+  --dark: #28292c;
+  --link: rgb(27, 129, 112);
+  --link-hover: rgb(24, 94, 82);
 }
 body {
   font-family: "Wix Madefor Text", sans-serif;
-  background-color: var(--colors-sand2);
+  background: var(--colors-sand2);
   color: var(--colors-sandA11);
   width: 100%;
 }
@@ -92,7 +99,7 @@ main {
   height: 50%;
 }
 .panel {
-  background-color: var(--colors-sand3);
+  background: var(--colors-sand3);
   border-radius: 15px;
   display: grid;
   width: 100%;
@@ -114,6 +121,9 @@ main {
 }
 .swichDiv {
   height: 30%;
+  position: relative;
+  display: flex;
+  gap: 10px;
 }
 .content {
   display: flex;
@@ -199,4 +209,48 @@ main {
   font-size: var(--font-size-tiny);
   margin-left: auto;
   padding: 5px 5px;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 40px;
+  height: 20px;
+  background: grey;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+input:checked + label {
+  background: #bada55;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 12px;
+}
+.panelLight {
+  background: var(--colors-sand12);
 }

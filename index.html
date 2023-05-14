@@ -23,7 +23,7 @@
         <div class="panel one">
           <div class="content">
             <span class="material-symbols-outlined logo"> token </span>
-            <h1>Hello wrold, my name is...</h1>
+            <h1 id="title">Hello wrold, my name is...</h1>
           </div>
         </div>
         <div class="panel two one">
@@ -43,10 +43,10 @@
             <p>Please login to the site to continue browsing (sample text)</p>
           </span>
           <span class="panel swichDiv one">
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider round">them switch</span>
-            </label>
+            <input type="checkbox" id="switch" /><label for="switch"
+              >Toggle</label
+            >
+            <p id="swichText">swich to light</p>
           </span>
         </div>
       </div>
@@ -76,5 +76,6 @@
         </div>
       </div>
     </main>
+    <script src="base.js"></script>
   </body>
 </html>
