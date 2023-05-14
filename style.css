@@ -4,27 +4,82 @@
   box-sizing: border-box;
 }
 :root {
-  --dark-bacground: #1c1c1a;
-  --panel-color-dark: #232320;
-  --text-color: #75746d;
+  --colors-sand1: hsl(61, 2%, 8.3%);
+  --colors-sand2: hsl(60, 3.7%, 10.6%);
+  --colors-sand3: hsl(58, 3.7%, 13.1%);
+  --colors-sand4: hsl(57, 3.6%, 15.3%);
+  --colors-sand5: hsl(56, 3.7%, 17.4%);
+  --colors-sand6: hsl(55, 3.7%, 19.9%);
+  --colors-sand7: hsl(53, 3.7%, 23.6%);
+  --colors-sand8: hsl(50, 3.8%, 30.6%);
+  --colors-sand9: hsl(50, 4%, 42.7%);
+  --colors-sand10: hsl(52, 3.1%, 48.3%);
+  --colors-sand11: hsl(50, 4%, 61.8%);
+  --colors-sand12: hsl(56, 4%, 92.8%);
+  --colors-sandA1: hsla(0, 0%, 0%, 0);
+  --colors-sandA2: hsla(60, 89.8%, 91.4%, 0.026);
+  --colors-sandA3: hsla(60, 95.5%, 92.5%, 0.056);
+  --colors-sandA4: hsla(60, 75.6%, 96.4%, 0.078);
+  --colors-sandA5: hsla(60, 81.9%, 95.2%, 0.104);
+  --colors-sandA6: hsla(41, 87.6%, 94.8%, 0.134);
+  --colors-sandA7: hsla(60, 95.4%, 96.2%, 0.172);
+  --colors-sandA8: hsla(49, 93.5%, 95.7%, 0.254);
+  --colors-sandA9: hsla(52, 97.3%, 96.2%, 0.391);
+  --colors-sandA10: hsla(52, 97.8%, 96.7%, 0.451);
+  --colors-sandA11: hsla(51, 97%, 97.8%, 0.597);
+  --colors-sandA12: hsla(60, 88.7%, 99.8%, 0.923);
+  --colors-js_quot: hsl(50, 75%, 70%);
+  --colors-js_decl: hsl(200, 75%, 70%);
+  --colors-js_func: hsl(300, 75%, 70%);
+  --colors-js_keyw: hsl(37, 75%, 70%);
+  --colors-js_pare: hsl(210, 75%, 70%);
+  --colors-js_squa: hsl(230, 75%, 70%);
+  --colors-js_curl: hsl(250, 75%, 70%);
+  --colors-js_numb: hsl(100, 75%, 70%);
+  --colors-js_logi: hsl(202, 35%, 85%);
+  --colors-js_comm: hsl(200, 10%, 45%);
+  --colors-html_tags: hsl(0, 75%, 70%);
+  --colors-html_angl: hsl(200, 10%, 35%);
+  --colors-html_attr: hsl(200, 75%, 70%);
+  --colors-html_quot: hsl(50, 75%, 70%);
+  --colors-step_0: hsl(60, 6%, 42%);
+  --colors-step_1: hsl(60, 6%, 39.5%);
+  --colors-step_2: hsl(60, 6%, 37%);
+  --colors-step_3: hsl(60, 6%, 34.5%);
+  --colors-step_4: hsl(60, 6%, 32%);
+  --colors-step_5: hsl(60, 6%, 29.5%);
+  --colors-step_6: hsl(60, 6%, 27%);
+  --colors-step_7: hsl(60, 6%, 24.5%);
+  --colors-step_8: hsl(60, 6%, 22%);
+  --colors-step_9: hsl(60, 6%, 19.5%);
+  --colors-step_10: hsl(60, 6%, 17%);
+  --colors-step_11: hsl(60, 6%, 14.5%);
+  --colors-text: var(--colors-sandA11);
+
+  --font-size-tiny: 12px;
+  --font-size-small: 14px;
+  --font-size-medium: 22px;
+  --font-size-big: 32px;
 }
 body {
-  background-color: var(--dark-bacground);
+  font-family: "Wix Madefor Text", sans-serif;
+  background-color: var(--colors-sand2);
+  color: var(--colors-sandA11);
   width: 100%;
 }
 h1 {
   color: white;
-  font-size: 40px;
+  font-size: var(--font-size-big);
 }
-p {
-  color: var(--text-color);
+ul {
+  list-style: none;
 }
 main {
   display: grid;
   grid-auto-rows: min-content;
   gap: 1em;
   padding: 20px;
-  max-width: 980px;
+  max-width: 1050px;
   margin: 1em auto;
 }
 .firstRow {
@@ -33,15 +88,13 @@ main {
   grid-auto-rows: min-content;
   gap: 1em;
 }
-#logo {
-  width: 20%;
+.logo {
+  height: 50%;
 }
 .panel {
-  background-color: var(--panel-color-dark);
-  border: 2px solid white;
-  border-radius: 20px;
+  background-color: var(--colors-sand3);
+  border-radius: 15px;
   display: grid;
-  place-content: center;
   width: 100%;
   user-select: none;
 }
@@ -52,35 +105,98 @@ main {
   gap: 1em;
 }
 .signLog {
-  display: inline-flex;
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  align-items: center;
   justify-content: flex-start;
   gap: 1em;
 }
 .swichDiv {
-  height: 50%;
+  height: 30%;
 }
 .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+.buttons {
+  margin-right: auto;
+}
 .contentText {
   max-width: 240px;
+  display: flex;
+  align-items: end;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
 }
 .one {
   padding: 20px;
 }
 #mainImg {
-  width: 96%;
+  width: 93%;
   aspect-ratio: 2 / 1;
   object-fit: cover;
   border-radius: 10px;
-  margin: 1em auto;
+  margin: 2em auto;
 }
-#signId,
+#signIn,
 #logIn {
   border-radius: 10px;
-  aspect-ratio: 2 /1;
-  font-size: 14px;
+  padding: 10px 15px;
+  font-size: var(--font-size-tiny);
+  font-weight: 600;
+  transition: all 0.275s;
+}
+#logIn {
+  background-color: var(--colors-sandA3);
+  color: var(--colors-sandA9);
+  border: none;
+}
+#logIn:hover {
+  background-color: var(--colors-sandA6);
+}
+#signIn {
+  background-color: var(--colors-sand10);
+  color: var(--colors-sand1);
+  border: none;
+}
+#signIn:hover {
+  background-color: var(--colors-sand12);
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em 2em 1em;
+}
+.leftBottom,
+.rightBottom {
+  display: grid;
+  align-content: flex-start;
+  padding: 0 20px 20px 20px;
+  line-height: 1.5;
+}
+.leftBottom {
+  color: var(--colors-sand12);
+  font-size: var(--font-size-medium);
+}
+
+#accept {
+  background-color: var(--colors-sand10);
+  color: var(--colors-sand1);
+  border: none;
+  width: fit-content;
+  margin-left: auto;
+  font-size: var(--font-size-small);
+  border-radius: 10px;
+  padding: 10px 20px;
+  transition: all 0.275s;
+}
+#accept:hover {
+  background-color: var(--colors-sand11);
+}
+#acceptDesciption {
+  font-size: var(--font-size-tiny);
+  margin-left: auto;
+  padding: 5px 5px;
 }

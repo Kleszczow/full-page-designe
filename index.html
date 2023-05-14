@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
   <body>
     <main>
       <div class="firstRow">
         <div class="panel one">
           <div class="content">
-            <img
-              src="./pictures/home_FILL0_wght400_GRAD0_opsz48.svg"
-              alt=""
-              id="logo"
-            />
+            <span class="material-symbols-outlined logo"> token </span>
             <h1>Hello wrold, my name is...</h1>
           </div>
         </div>
@@ -25,20 +31,21 @@
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reiciendis incidunt nesciunt delectus ullam quam iure animi
-              voluptatem exercitationem! Adipisci tempore sequi dolores dolorum
-              facilis repellat beatae consequatur voluptas, animi libero?
             </p>
           </div>
         </div>
         <div class="loginDiv">
           <span class="panel signLog one">
-            <button id="signId">SIGN UP</button>
-            <button id="logIn">LOG IN</button>
+            <div class="buttons">
+              <button id="signIn">SIGN UP</button>
+              <button id="logIn">LOG IN</button>
+            </div>
+            <p>Please login to the site to continue browsing (sample text)</p>
           </span>
           <span class="panel swichDiv one">
             <label class="switch">
               <input type="checkbox" />
-              <span class="slider round"></span>
+              <span class="slider round">them switch</span>
             </label>
           </span>
         </div>
@@ -48,21 +55,21 @@
           <div class="panel five">
             <img
               id="mainImg"
-              src="./pictures/shambhavi-singh-nu94FlnYSAI-unsplash.jpg"
+              src="./pictures/museum-of-new-zealand-te-papa-tongarewa-KHHgCEN_HAw-unsplash.jpg"
               alt="donuts imagine"
             />
             <div class="bottom">
               <div class="leftBottom">
                 <p>List off nothinkg</p>
                 <ul>
-                  <li><p>Tomato soup</p></li>
-                  <li><p>Silesian noodles</p></li>
-                  <li><p>Large pizza with cheese edges</p></li>
+                  <li><p>1 · Tomato soup</p></li>
+                  <li><p>2 · Silesian noodles</p></li>
+                  <li><p>3 · Large pizza with cheese edges</p></li>
                 </ul>
               </div>
               <div class="rightBottom">
-                <button>Accept and proceed to eat</button>
-                <p>If not, please leave the restaurant</p>
+                <button id="accept">Accept and proceed to eat</button>
+                <p id="acceptDesciption">If not, please leave the restaurant</p>
               </div>
             </div>
           </div>
