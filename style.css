@@ -303,12 +303,20 @@ label:active:after {
   align-items: center;
   justify-content: center;
   gap: 1em;
+  position: relative;
 }
 .tordiv {
-  width: 130px;
-  height: 130px;
+  width: 25%;
+  aspect-ratio: 1;
   background-color: var(--colors-sand7);
   border-radius: 15px;
+  position: absolute;
+}
+.trough {
+  transform: translateX(-120%);
+}
+.reorder {
+  transform: translateX(120%);
 }
 .cardImg {
   width: 100%;
@@ -340,4 +348,18 @@ label:active:after {
   background-color: rgb(46, 46, 42);
   scale: 0.85;
   transform: translateY(-50px);
+}
+.up {
+  animation: jumping 2.5s;
+}
+@keyframes jumping {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 2;
+  }
+  100% {
+    scale: 1;
+  }
 }

@@ -41,3 +41,17 @@ const changeColor = () => {
 };
 
 swich.addEventListener("click", changeColor);
+
+const keyC = document.querySelector(".keyC");
+const keyB = document.querySelector(".keyB");
+const keyA = document.querySelector(".keyA");
+
+let index = [{ name: "keyA" }, { name: "keyB" }, { name: "keyC" }];
+
+addEventListener("load", () => {
+  let jump = Math.floor(Math.random() * index.length);
+
+  const lol = index[jump].name;
+  const { name } = index;
+  console.log(typeof lol);
+});
