@@ -23,6 +23,7 @@ const changeColor = () => {
       logIn.style.color = "var(--colors-sand9)";
       accept.style.background = "var(--colors-sand10)";
       accept.style.color = "var(--colors-sand12)";
+      swichText.innerHTML = "swich to dark";
     } else {
       body.style.background = "var(--colors-sand2)";
       body.style.color = "var(--colors-sandA11)";
@@ -34,6 +35,7 @@ const changeColor = () => {
       logIn.style.background = "var(--colors-sandA3";
       accept.style.background = "var(--colors-sand10)";
       accept.style.color = "var(--colors-sand1)";
+      swichText.innerHTML = "swich to light";
     }
   });
 };

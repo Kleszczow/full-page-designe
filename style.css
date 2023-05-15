@@ -254,3 +254,90 @@ label:active:after {
 .panelLight {
   background: var(--colors-sand12);
 }
+.threeRow {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  height: 500px;
+}
+.cardDiv {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3em;
+  position: relative;
+}
+.textroll {
+  font-size: var(--font-size-medium);
+  line-height: 1.4;
+}
+#lightTex {
+  color: var(--colors-sand12);
+}
+.keyboardandOrder {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  width: 50%;
+}
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 1em;
+}
+.keycaps {
+  height: 100px;
+  transform: translate(5%, 10%);
+}
+
+.order {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.tordiv {
+  width: 130px;
+  height: 130px;
+  background-color: var(--colors-sand7);
+  border-radius: 15px;
+}
+.cardImg {
+  width: 100%;
+}
+.divRoller {
+  height: 70%;
+  position: relative;
+}
+.korean,
+.video,
+.twiitGpt {
+  border-radius: 15px;
+  position: absolute;
+  bottom: 0;
+}
+.video {
+  transform: translateY(-25px);
+  background-color: rgb(56, 56, 50);
+  scale: 0.92;
+  z-index: 2;
+}
+.korean {
+  transform: translateY(0);
+  z-index: 3;
+  background-color: rgb(73, 73, 65);
+}
+.twiitGpt {
+  z-index: 1;
+  background-color: rgb(46, 46, 42);
+  scale: 0.85;
+  transform: translateY(-50px);
+}

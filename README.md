@@ -1,6 +1,6 @@
 # full page designe project
 
-# deigne by CSS grid, flexand some JS
+# deigne by CSS grid, flex and some JS
 
 My goals in this project:
 
@@ -10,3 +10,5 @@ My goals in this project:
 
 In the project I'm doing a website design from:
 https://www.herdi.ng/lp
+
+optymiazlie jpg from 11.4MB to 650KB
